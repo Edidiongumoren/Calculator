@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+    <p class="js-result result">0</p>
+    <p>
+    <button class="js-c top" onclick="clearDisplay()">C</button>
+    <button class="js-plus-minus top">+/-</button>
+    <button class="js-percent top" onclick="display('%')">%</button>
+    <button class="js-divide yellow-buttons" onclick="display('/')">/</button>
+    </p>
+    <p>
+      <button class="js-7 numbers" onclick="
+        display('7')
+      ">7</button>
+      <button class="js-8 numbers" onclick="
+        display('8')
+      ">8</button>
+      <button class="js-9 numbers" onclick="
+        display('9')
+      ">9</button>
+      <button class="js-x yellow-buttons" onclick="
+        display('*')
+      ">x</button>
+    </p>
+    <p>
+      <button class="js-4 numbers" onclick="
+        display('4')">4</button>
+      <button class="js-5 numbers" onclick="
+        display('5')
+      ">5</button>
+      <button class="js-6 numbers" onclick="
+        display('6')
+      ">6</button>
+      <button class="js-minus yellow-buttons" onclick="display('-')">-</button>
+    </p>
+    <p>
+      <button class="js-1 numbers" onclick="display('1')">1</button>
+      <button class="js-2 numbers" onclick="display('2')">2</button>
+      <button class="js-3 numbers" onclick="display('3')">3</button>
+      <button class="js-plus yellow-buttons" onclick="display('+')">+</button>
+    </p>
+    <p>
+      <button class="js-zero number-0" onclick="display('0')">0</button>
+      <button class="js-decimal numbers" onclick="display('.')">.</button>
+      <button class="js-equal-to yellow-buttons" onclick="
+        calculate();
+      ">=</button>
+    </p>
+    <script src="calculator.js"></script>
+  </body>
+</html>
